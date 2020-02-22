@@ -1,8 +1,8 @@
 # Introduction:
 
 
-This python tool is a analytics platform for suppliers and buyers of active pharmaceutical ingredients and excipients. Providing unique market insights like price trends, this tool addresses the current lack of market transparency. 
-For this purpose, we as a machine learning team analyze the data and then pre-processes the datasets and finally, we implement various machine learning algorithms like CNN, LSTM, HMM, Bi-directional LSTM to create various models only to estimate market prices/volumes which in turn help to strategic buyers and sales reps. While doing our experiment, this 
+This python tool is a analytics tool for suppliers and buyers of active pharmaceutical ingredients and excipients. Providing unique market insights like price trends, this tool addresses the current lack of market transparency. 
+For this purpose, I analyze the data and then pre-processes the datasets and finally, implement various machine learning algorithms like CNN, LSTM, HMM, Bi-directional LSTM to create various models only to estimate market prices/volumes which in turn help to strategic buyers and sales reps. While doing this experiment, this 
 part of the work focuses on two areas to predict the future market prices of the drugs. They are:
 1.	Regression Analysis 
 2.	Bi-Directional LSTM (Long-Short Term Memory) models
@@ -17,8 +17,8 @@ for time-series data to forecast more efficiently the pricing of the drugs.
   * [base_model_regression_paracetamol_weightedavg_data_norm_price.ipynb](baseline_models/base_model_regression_paracetamol_weightedavg_data_norm_price.ipynb) - Implement Paracetamol weighted average dataset
   * [base_model_regression_ibuprofen_weightedavg_data_norm_price.ipynb](baseline_models/base_model_regression_ibuprofen_weightedavg_data_norm_price.ipynb) - Implement Ibuprofen weighted average dataset
   * [base_model_regression_general_interpolated_data_norm_price.ipynb](baseline_models/base_model_regression_general_interpolated_data_norm_price.ipynb) - Implement regression models on the interpolated datasets of all the painkillers.
-  * **Data:** Raw dataset of Paracetamol and Ibuprofen are in this sub-directory.
-    * **interpolated** - containing all the interpolated datasets. 
+  * **Data:** Raw dataset of Paracetamol and Ibuprofen are in this sub-directory. (didn't upload it)
+    * **interpolated** - containing all the interpolated datasets. (didn't upload it)
   * **models** - containing all the generated regression models in this sub-directory.
   * **graphs** - this sub-directory contains all the results plots for regression base models.
    
@@ -35,14 +35,14 @@ for time-series data to forecast more efficiently the pricing of the drugs.
   * [bidir_lstm_multivariate_model_paracetamol_quantity.ipynb](bidirlstm/bidir_lstm_multivariate_model_paracetamol_quantity.ipynb) - Multivariate bidirlstm model by using Paracetamol weighted average dataset. Target value: quantity.
   * [bidir_lstm_multivariate_model_general_interpolated_data_price.ipynb](bidirlstm/bidir_lstm_multivariate_model_general_interpolated_data_price.ipynb) - Multivariate bidirlstm model for all the painkillers interpolated datasets. Target value: price. Test with Ibuprofen & Paracetamol interpolated datasets.
   * [bidir_lstm_multivariate_model_general_interpolated_data_quantity.ipynb](bidirlstm/bidir_lstm_multivariate_model_general_interpolated_data_quantity.ipynb) - Multivariate bidirlstm model for all the painkillers interpolated datasets. Target value: quantity. Test with Ibuprofen & Paracetamol interpolated datasets.
-  * **Data**: Raw dataset of Paracetamol and Ibuprofen are in this sub-directory. 
-    * **interpolated** - containing all the interpolated datasets. 
+  * **Data**: Raw dataset of Paracetamol and Ibuprofen are in this sub-directory. (didn't upload it)
+    * **interpolated** - containing all the interpolated datasets. (didn't upload it)
   * **models** - containing all the generated bidirectional models in this sub-directory.
   * **graphs** - this sub-directory contains all the results plots for bidirectional lstm models.
 
 # Data Visualization and Pre-Processing
 
-Our first task is to analysis the current painkillers/drugs datasets. We have given 2 datasets and our analysis is based on these 2 datasets. Datasets are: 
+First task is to analysis the current painkillers/drugs datasets. Taking given 2 datasets and first analysis is based on these 2 datasets. Datasets are: 
 * [Ibuprofen](baseline_models/data/ibuprofen.csv)
 * [Paracetamol](baseline_models/data/paracetamol.csv)
 
@@ -79,9 +79,6 @@ After implement this, the sns plot of ibuprofen for weighted average price and q
 
 In the existing dataset, missing data problem is found in each dataset. It appears that for 
 some month there is no price, quantity data to train the model. This issue was solved by using interpolation method. 
-Details of the interpolation method are covered in the below link: 
-
-[https://gitlab.com/qyobo/ml/blob/ali/README.md](https://gitlab.com/qyobo/ml/blob/ali/README.md)
 
 ### Dataset Normalization
 
