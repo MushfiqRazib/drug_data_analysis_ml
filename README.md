@@ -1,15 +1,8 @@
-QYOBO ML
-
-This branch is the mirror branch of *baseline_models* branch. To sync up with others this branch is created with the naming conventions.
-Also, the branch is updated with the latest source codes for both the baseline regression and the bi-dir lstm models. 
-
 # Introduction:
 
 
-QYOBO is a B2B Marketplace and analytics platform for suppliers and buyers of active pharmaceutical ingredients and excipients. Providing unique market insights like price trends,
-QYOBO addresses the current lack of market transparency. 
-For this purpose, we as a machine learning team analyze the data and then pre-processes the datasets and finally, we implement various machine learning algorithms like CNN, LSTM,
-HMM, Bi-directional LSTM to create various models only to estimate market prices/volumes which in turn help to strategic buyers and sales reps. While doing our experiment, this 
+This python tool is a analytics platform for suppliers and buyers of active pharmaceutical ingredients and excipients. Providing unique market insights like price trends, this tool addresses the current lack of market transparency. 
+For this purpose, we as a machine learning team analyze the data and then pre-processes the datasets and finally, we implement various machine learning algorithms like CNN, LSTM, HMM, Bi-directional LSTM to create various models only to estimate market prices/volumes which in turn help to strategic buyers and sales reps. While doing our experiment, this 
 part of the work focuses on two areas to predict the future market prices of the drugs. They are:
 1.	Regression Analysis 
 2.	Bi-Directional LSTM (Long-Short Term Memory) models
